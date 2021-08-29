@@ -19,7 +19,7 @@ class LEDPanel():
 
     def setColor(self, color):
         if color in COLORS:
-            self.uhm.set_all(COLORS[color])
+            self.uhm.set_all(*COLORS[color])
         else:
             self.uhm.set_all(*color)
         self.uhm.show()
