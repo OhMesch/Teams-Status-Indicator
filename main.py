@@ -2,7 +2,7 @@ from datetime import datetime
 import time
 
 from GraphQuerier import GraphQuerier
-# from LEDPanel import LEDPanel
+from LEDPanel import LEDPanel
 
 def isWorkHours():
     now = datetime.now()
