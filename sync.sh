@@ -1,4 +1,4 @@
-if [[ $(git fetch) ]];
+if [ -z $(git fetch) ];
 then
     echo "Up to date."
     exit 0
