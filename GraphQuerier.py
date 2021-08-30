@@ -26,4 +26,4 @@ class GraphQuerier():
         # TODO Think about printing error codes here
         print(r.status_code)
         print(r.json())
-        return(r.json()["Availibility"])
+        return(r.json()["availability"])

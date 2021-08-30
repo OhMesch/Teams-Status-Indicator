@@ -4,9 +4,8 @@ then
     exit 0
 else
     echo "Updating..."
-    # kill realname
-    # pkill -f forrealfigureoutthenamefirst
+    killall -e "python3"
     git merge origin/main
-    python main.py #Restart application
+    python3 ~/Teams-Status-Indicator/main.py #Restart application
     echo "Update complete."
 fi
