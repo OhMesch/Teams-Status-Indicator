@@ -11,9 +11,8 @@ class GraphQuerier():
         self.tokenManager = TokenManager()
 
     def getTeamsStatus(self):
-        if (tk := self.tokenManager.getTokenSilent()):
-            pass
-        else:
+        tk = self.tokenManager.getTokenSilent() #Python 3.8 and walrus not supported on pi buster
+        if (not tk):
             device_flow =self.tokenManager.initDeviceFlow()
             code_printer = DeviceCodePrinter(device_flow["user_code"])
             code_printer.printUntilComplete()
