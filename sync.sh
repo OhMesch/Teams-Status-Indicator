@@ -1,5 +1,4 @@
-fetch_output = $(git fetch)
-if [ -z "$fetch_output" ]
+if [[ $(git fetch) ]];
 then
     echo "Up to date."
     exit 0
