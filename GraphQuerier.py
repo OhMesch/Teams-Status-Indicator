@@ -23,6 +23,7 @@ class GraphQuerier():
         auth = {'Authorization': 'Bearer ' + tk['access_token']}
         r = requests.get(request_url, headers=auth, timeout=5)
 
+        # TODO Think about printing error codes here
         print(r.status_code)
         print(r.json())
-        return(r)
+        return(r.json()["Availibility"])
