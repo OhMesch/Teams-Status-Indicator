@@ -24,7 +24,7 @@ if __name__=="__main__":
     while True:
         print('get Status at {}'.format(time.strftime("%H:%M:%S GMT",time.gmtime())))
         if isWorkHours():
-            status = conn.getTeamsStatus()["Availibility"]
+            status = conn.getTeamsStatus()
         else:
             status = "OutOfOffice"
         
