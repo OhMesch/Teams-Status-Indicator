@@ -35,7 +35,7 @@ if __name__=="__main__":
         if isWorkHours():
             status = conn.getTeamsStatus()
         else:
-            status = "OutOfOffice"
+            status = "Offline"
         
         setPresenceStatus(status)
         time.sleep(60 - time.time() % 60)
