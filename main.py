@@ -25,6 +25,7 @@ def setPresenceStatus(status):
     setPresenceStatus.status_color = {"Available": "green",
                                       "Away": "yellow",
                                       "Busy": "red",
+                                      "DoNotDisturb": "red",
                                       "Offline": "purple"}
     LEDPanel.setColor(setPresenceStatus.status_color[status])
 
