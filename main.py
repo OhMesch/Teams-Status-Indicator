@@ -24,6 +24,7 @@ def isWorkHours():
 def setPresenceStatus(status):
     setPresenceStatus.status_color = {"Available": "green",
                                       "Away": "yellow",
+                                      "AvailableIdle": "yellow",
                                       "Busy": "red",
                                       "DoNotDisturb": "red",
                                       "Offline": "purple"}
